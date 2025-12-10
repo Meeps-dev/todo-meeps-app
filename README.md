@@ -1,29 +1,29 @@
 📝 TodoMeeps — Smart Todo App (Flutter + Firebase)
 
-A clean, modern, and scalable Todo management mobile application built using Flutter, Riverpod, Firebase (Auth, Firestore, Storage) and Hive for offline persistence.
-Designed with production-level architecture and best practices.
+A clean, modern, and scalable task-management mobile app built with Flutter, Riverpod, Firebase (Auth, Firestore, Storage), and Hive for offline persistence.
+Designed with production-level architecture, clean MVVM patterns, and rock-solid state management.
 
 🚀 Features
 
-✔️ User Authentication (Firebase Email/Password)
+✔️ Firebase Authentication (Email/Password)
 
-✔️ Personalized Todo Lists (Synced to Firestore)
+✔️ Personal Todo Lists (Synced in real-time via Firestore)
 
-✔️ Add, Update, and Delete Todos
+✔️ Add, Update, Delete Todos
 
 ✔️ Profile Management (Name + Profile Picture Upload)
 
-✔️ Upload Profile Image to Firebase Storage
+✔️ Upload profile images to Firebase Storage
 
-✔️ Local Caching with Hive
+✔️ Offline caching with Hive
 
-✔️ State Management using Riverpod
-
-✔️ Responsive UI
+✔️ Riverpod for state management
 
 ✔️ Clean MVVM Architecture
 
-✔️ Error-handled API Integration
+✔️ Responsive UI
+
+✔️ Error-handled API / Firebase operations
 
 🧱 Project Architecture
 lib/
@@ -41,9 +41,6 @@ lib/
 │   └── utils/           # Helpers & constants
 └── main.dart            # App entry point
 
-
-This follows a clean MVVM pattern, ensuring maintainability and scalability.
-
 🛠️ Tech Stack
 Layer	Technology
 Framework	Flutter (Dart)
@@ -52,26 +49,26 @@ Authentication	Firebase Auth
 Database	Cloud Firestore
 File Storage	Firebase Storage
 Local Storage	Hive
-UI Framework	Material Design 3
+UI	Material Design 3
 📸 Screenshots
 
-Add images later if you want:
+(Add images here later)
 
 assets/screens/home.png
 assets/screens/profile.png
 assets/screens/login.png
 
 🔧 Installation & Setup
-1️⃣ Clone the Repository
+1️⃣ Clone the repository
 git clone https://github.com/<your-username>/<repo-name>.git
 cd <repo-name>
 
-2️⃣ Install Dependencies
+2️⃣ Install dependencies
 flutter pub get
 
-3️⃣ Setup Firebase
+3️⃣ Configure Firebase
 
-Create a Firebase project, then enable:
+Enable:
 
 Authentication → Email/Password
 
@@ -79,12 +76,12 @@ Firestore Database
 
 Firebase Storage
 
-Add Firebase to your Flutter project:
+Then run:
 
 flutterfire configure
 
 
-Place these files correctly:
+Place these files:
 
 android/app/google-services.json
 ios/Runner/GoogleService-Info.plist
@@ -93,7 +90,7 @@ ios/Runner/GoogleService-Info.plist
 await Hive.initFlutter();
 await Hive.openBox('userBox');
 
-5️⃣ Run the App
+5️⃣ Run the app
 flutter run
 
 📁 Firestore Structure
@@ -113,38 +110,28 @@ todos/
 
 🔐 Environment Notes
 
-Keep these files private:
+Sensitive files to keep private:
 
 firebase_options.dart
-GoogleService-Info.plist
+
 google-services.json
 
+GoogleService-Info.plist
 
-Add them to .gitignore if needed.
+Add them to .gitignore if necessary.
 
 🤝 Contributing
-
-Fork this repo
-
-Create your feature branch
-
-Commit your changes
-
-Push your branch
-
-Open a Pull Request
-
-Example:
-
 git checkout -b feature/new-feature
-git commit -m "Added new feature"
+git commit -m "Add new feature"
 git push origin feature/new-feature
+
+
+Open a Pull Request after pushing.
 
 📄 License
 
-This project is licensed under the MIT License — free to use and modify.
+Licensed under the MIT License — free to use, fork, and modify.
 
 ⭐ Support
 
-If this project helped you, please ⭐ star the repo.
-It motivates further development and enhancements ❤️
+If this project helped you, consider starring ⭐ the repo!

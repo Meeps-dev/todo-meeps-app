@@ -50,13 +50,7 @@ Database	Cloud Firestore
 File Storage	Firebase Storage
 Local Storage	Hive
 UI	Material Design 3
-📸 Screenshots
 
-(Add images here later)
-
-assets/screens/home.png
-assets/screens/profile.png
-assets/screens/login.png
 
 🔧 Installation & Setup
 1️⃣ Clone the repository

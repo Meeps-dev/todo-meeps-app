@@ -41,6 +41,7 @@ lib/
 │   └── utils/           # Helpers & constants
 └── main.dart            # App entry point
 
+
 🛠️ Tech Stack
 Layer	Technology
 Framework	Flutter (Dart)

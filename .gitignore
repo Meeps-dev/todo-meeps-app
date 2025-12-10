@@ -1,0 +1,34 @@
+# Flutter / Dart
+.dart_tool/
+.packages
+.pub/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+.flutter-plugins-dependencies
+.gen/
+.idea/
+.vscode/
+*.iml
+*.lock
+pubspec.lock
+# iOS
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Runner/GeneratedPluginRegistrant.*
+# Android
+.android/
+# macOS
+.macos/Flutter/Flutter.framework
+# VS Code workspace
+.vscode/
+# Firebase config and local secrets - do NOT commit real service account keys
+android/app/google-services.json
+ios/Runner/GoogleService-Info.plist
+# Optional: big files
+*.apk
+*.aab
+# Generated files
+**/generated_plugin_registrant.dart
